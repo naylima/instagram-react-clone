@@ -7,6 +7,9 @@ function Story(props) {
                 <div class="usuario">
                     {props.usuario}
                 </div>
+                <div class="setinha">
+                <ion-icon name="chevron-forward-circle"></ion-icon>
+                </div>
         </div>
     );
 }
@@ -28,9 +31,6 @@ function Stories () {
             {stories.map(story => (
                 <Story src = {story.src} usuario = {story.usuario} />
             ))};
-            <div class="setinha">
-                <ion-icon name="chevron-forward-circle"></ion-icon>
-            </div>
         </div>
     )
 }
